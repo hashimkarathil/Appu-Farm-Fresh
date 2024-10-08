@@ -43,8 +43,8 @@
   }
   
   nav img {
-    width: 80px;
-    height: 40px;
+    width: 180px;
+    height: 80px;
     margin-left: 20px;
   }
   
@@ -59,7 +59,7 @@
       url('Images/homeimage.jpg');
     background-size: cover;
     background-position: center;
-    padding: 100px 0;
+    padding: 150px 0;
     text-align: center;
   }
   
@@ -73,8 +73,7 @@
     color: #e5e5e5;
     font-size: 24px;
   }
-  
-  /* Products Section */
+
   .products {
     background-color: #1f592a;
     color: white;
@@ -89,40 +88,205 @@
     text-align: left;
     margin-left: 80px;
   }
-  
+/*......................start..........*/
+
+  /* Grid container */
   .product-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dynamic grid based on screen size */
+    gap: 20px; /* Space between items */
     padding: 40px;
+    justify-items: center; /* Center items horizontally */
   }
-  
-  .product-item {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  
-  .product-item:hover {
-    box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .product-item img {
-    width: 100%;
-    height: 200px;
-    border-radius: 10px;
-  }
-  
-  .product-item p {
-    color: black;
-    margin-top: 10px;
-    font-size: 18px;
-    font-weight: bold;
-  }
+
+.container {
+  position: relative;
+}
+
+.container .card {
+  position: relative;
+  width: 290px; /* Reduced width */
+  height: 380px; /* Reduced height */
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.2s ease-in-out; /* Reduced animation duration */
+}
+
+.container .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #2c7d1c;
+  clip-path: circle(130px at 80% 20%);
+  transition: 0.3s ease-in-out; /* Reduced from 0.5s */
+}
+
+.container .card:hover:before {
+  clip-path: circle(250px at 80% -20%);
+}
+
+.container .card:after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 10em; /* Slightly reduced */
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
+}
+
+.container .card .imgBx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s; /* Reduced from 0.5s */
+}
+
+.container .card:hover .imgBx {
+  top: 0%;
+  transform: translateY(-30%);
+}
+
+.container .card .imgBx img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 390px; /* Reduced size */
+}
+
+.container .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 0.5s; /* Reduced to 0.5s */
+  z-index: 90;
+}
+
+.container .card:hover .contentBx {
+  height: 200px; /* Adjusted height */
+}
+
+.container .card .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  font-size: 16px; /* Reduced font size */
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+.container .card .contentBx p {
+  font-size: 12px; /* Reduced from original */
+  color: #000000;
+  margin-top: 5px;
+}
+
+.container .card .contentBx .size,
+.container .card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 10px; /* Reduced padding */
+  transition: 0.3s; /* Reduced from 0.5s */
+  opacity: 0;
+  visibility: hidden;
+}
+
+.container .card:hover .contentBx .size {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.2s; /* Reduced delay */
+}
+
+.container .card:hover .contentBx .color {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.25s; /* Reduced delay */
+}
+
+.container .card .contentBx .size h3,
+.container .card .contentBx .color h3 {
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.container .card .contentBx .size span {
+  width: 22px; /* Reduced size */
+  height: 22px;
+  text-align: center;
+  line-height: 22px;
+  font-size: 12px;
+  display: inline-block;
+  background: #ffffff;
+  margin: 0 5px;
+  transition: 0.3s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container .card .contentBx .size span:hover {
+  background: #B90000;
+  color: #fff;
+}
+
+.container .card .contentBx .color span {
+  width: 16px; /* Reduced size */
+  height: 16px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 1px;
+  cursor: pointer;
+}
+
+.container .card .contentBx .color span:nth-child(2) {
+  background: #1BBFE9;
+}
+
+.container .card .contentBx .color span:nth-child(3) {
+  background: #1B2FE9;
+}
+
+.container .card .contentBx .color span:nth-child(4) {
+  background: #080481;
+}
+
+.container .card .contentBx a {
+  display: inline-block;
+  padding: 8px 16px; /* Reduced padding */
+  background: #000000;
+  border-radius: 4px;
+  margin-top: 8px; /* Reduced margin */
+  text-decoration: none;
+  font-size: 14px; /* Reduced font size */
+  font-weight: 500;
+  color: #46ee04;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.4s; /* Reduced from 0.5s */
+}
+
+.container .card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.3s; /* Reduced delay */
+}
+
+/*......................end..........*/
   
   /* Testimonial Section */
   .testimonial {
@@ -280,12 +444,8 @@
   
   /* Max width 1150px */
   @media (max-width: 1150px) {
-    .product-item {
-      width: 30%; /* Reduced size for larger screens */
-    }
-  
     .products h2 {
-      margin-left: 40px; /* Reduced margin */
+      margin-left: 40px; /* Adjust margin for smaller screens */
     }
   }
   
@@ -318,9 +478,8 @@
     }
   
     .product-list {
-      flex-direction: column;
-        padding-top: 20px;
-      align-items: center; /* Center items */
+      grid-template-columns: 1fr; /* Single column layout on smaller screens */
+      padding-top: 20px;
     }
   
     .product-item {
@@ -350,5 +509,6 @@
     footer p{
         font-size: 12px;
     }
+    
   }
   
