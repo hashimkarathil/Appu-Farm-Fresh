@@ -5,34 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="testimonial.css">
     <title>Testimonial Card</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-    <div class="testimonial-container">
-        <div class="testimonial-card">
-            <div class="testimonial-content">
-                <p class="testimonial-text">"This service has transformed our business! Highly recommend to anyone looking to elevate their brand."</p>
-                <h3 class="client-name">Jane Doe</h3>
-                <p class="client-title">CEO, Example Corp</p>
-                <a href="https://www.youtube.com/watch?v=video1" target="_blank" class="video-button">Watch Video</a>
+    <div class="card">
+        <input type="checkbox" id="check">
+        <div class="card-inside">
+            <div class="text-box">
+                <h2>Martin H</h2>
+                <h6> Business Man</h6>
             </div>
+            <img src="https://picsum.photos/480/380" >
         </div>
-
-        <div class="testimonial-card">
-            <div class="testimonial-content">
-                <p class="testimonial-text">"Exceptional quality and support. Truly a partner in our success."</p>
-                <h3 class="client-name">John Smith</h3>
-                <p class="client-title">Founder, Tech Innovations</p>
-                <a href="https://www.youtube.com/watch?v=video2" target="_blank" class="video-button">Watch Video</a>
+        <label for="check" class="control-btn">
+            <ion-icon name="add"></ion-icon>
+        </label>
+        <div class="content">
+            <div class="rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-half"></ion-icon>
             </div>
-        </div>
-
-        <div class="testimonial-card">
-            <div class="testimonial-content">
-                <p class="testimonial-text">"A game changer for our workflow. Highly recommend their services!"</p>
-                <h3 class="client-name">Emily Johnson</h3>
-                <p class="client-title">Marketing Director, Creative Agency</p>
-                <a href="https://www.youtube.com/watch?v=video3" target="_blank" class="video-button">Watch Video</a>
-            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, eveniet!</p>
         </div>
     </div>
 </body>

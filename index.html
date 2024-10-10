@@ -10,8 +10,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer"/>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </head>
   <body>
     <header>
@@ -292,35 +294,83 @@
     <section class="testimonial">
       <h2>Testimonial From</h2>
       <p>
-        <i class="fa fa-caret-right" aria-hidden="true"></i
-        ><i class="fa fa-caret-right" aria-hidden="true"></i
-        ><i class="fa fa-caret-right" aria-hidden="true"></i> Our clients
+        <i class="fa fa-caret-right" aria-hidden="true"></i>
+        <i class="fa fa-caret-right" aria-hidden="true"></i>
+        <i class="fa fa-caret-right" aria-hidden="true"></i> Happy clients
       </p>
+    <div class="card-grid">
+      <div class="card">
+        <input type="checkbox" id="check">
+        <div class="card-inside">
+            <div class="text-box">
+                <h2>Martin H</h2>
+                <h6> Business Man</h6>
+            </div>
+            <img src="https://picsum.photos/480/380" >
+        </div>
+        <label for="check" class="control-btn">
+            <ion-icon name="add"></ion-icon>
+        </label>
+        <div class="content">
+            <div class="rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-half"></ion-icon>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, eveniet!</p>
+        </div>
+    </div>
 
-      <div class="testimonials">
-        <div class="testimonial-box">
-          <blockquote>“Quote”</blockquote>
-          <div class="author">
-            <img src="Images/user.jpg" alt="Ravi" />
-            <p><strong>Ravi</strong><br />Description</p>
+    <div class="card">
+      <input type="checkbox" id="check">
+      <div class="card-inside">
+          <div class="text-box">
+              <h2>Martin H</h2>
+              <h6> Business Man</h6>
           </div>
-        </div>
-        <div class="testimonial-box">
-          <blockquote>“Quote”</blockquote>
-          <div class="author">
-            <img src="Images/user.jpg" alt="Praveen" />
-            <p><strong>Praveen</strong><br />Description</p>
-          </div>
-        </div>
-        <div class="testimonial-box">
-          <blockquote>“Quote”</blockquote>
-          <div class="author">
-            <img src="Images/user.jpg" alt="Soumiya" />
-            <p><strong>Soumiya</strong><br />Description</p>
-            <a href="https://www.youtube.com/watch?v=video3" target="_blank" class="video-button">Watch Video</a>
-          </div>
-        </div>
+          <img src="https://picsum.photos/480/380" >
       </div>
+      <label for="check" class="control-btn">
+          <ion-icon name="add"></ion-icon>
+      </label>
+      <div class="content">
+          <div class="rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-half"></ion-icon>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, eveniet!</p>
+      </div>
+  </div>
+
+  <div class="card">
+    <input type="checkbox" id="check">
+    <div class="card-inside">
+        <div class="text-box">
+            <h2>Martin H</h2>
+            <h6> Business Man</h6>
+        </div>
+        <img src="https://picsum.photos/480/380" >
+    </div>
+    <label for="check" class="control-btn">
+        <ion-icon name="add"></ion-icon>
+    </label>
+    <div class="content">
+        <div class="rating">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star-half"></ion-icon>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, eveniet!</p>
+    </div>
+  </div>
+</div>
     </section>
 
     <!-- Footer Section -->
