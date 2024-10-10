@@ -1,17 +1,14 @@
-/* General Styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  /* Header */
-  header {
+    background-color: #0b7238;
+}
+header {
     background-color: #ffffff;
     padding: 10px 20px;
   }
@@ -47,7 +44,7 @@
   nav img {
     width: 180px;
     height: 80px;
-    margin-left: 20px;
+    margin-left: 40px;
   }
   
   /* Hamburger Menu */
@@ -82,48 +79,97 @@
 .sidebar a {
     width: 100%;
 }
-  /* Banner Section */
-  .banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url('Images/homeimage.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 150px 0;
-    text-align: center;
-  }
-  
-  .banner-content h1 {
-    color: white;
-    font-size: 48px;
-    letter-spacing: 2px;
-  }
-  
-  .banner-content p {
-    color: #e5e5e5;
-    font-size: 24px;
-  }
-
-  .products {
-    background-color: #1f592a;
-    color: white;
-    padding: 50px 0;
-    text-align: center;
-  }
-  
-  .products h2 {
+.products{
+    margin-top: 40PX;
+}
+.products h2 {
     font-size: 32px;
-    margin-bottom: 20px;
+    margin-bottom:0px;
+    margin-top: 10PX;
     letter-spacing: 1px;
     text-align: left;
     margin-left: 80px;
+    color: white;
   }
-/*......................start..........*/
 
-  /* Grid container */
-  .product-list {
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Reduced width for a more compact layout */
+}
+
+.product-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 40%; /* Adjusted width for better alignment */
+}
+
+.product-image img {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.product-info {
+    background-color: #f0f0f0; /* Set gray background */
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%; /* Adjusted width */
+    text-align: left;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for effect */
+}
+
+.product-info h2 {
+    font-size: 24px;
+    color: #043d09;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-info label, .product-info input, .product-info button {
+    display: block;
+    margin: 10px 0;
+}
+
+.product-info input {
+    padding: 5px;
+    width: 100px;
+}
+
+.product-info button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.product-info button:hover {
+    background-color: #218838;
+}
+
+  /*products details start */
+
+
+ /* Grid container */
+ .product-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dynamic grid based on screen size */
-    gap: 15px; /* Space between items */
+    gap: 20px; /* Space between items */
     padding: 40px;
     justify-items: center; /* Center items horizontally */
   }
@@ -315,92 +361,8 @@
   transform: translateY(0px);
   transition-delay: 0.3s; /* Reduced delay */
 }
-
-/*......................end..........*/
-  
-  /* Testimonial Section */
-  .testimonial {
-    padding: 20px;
-    background-color: #f7f7f7;
-  }
-  
-  .testimonial h2 {
-    font-size: 30px;
-    letter-spacing: 1px;
-    text-align: left;
-    margin-left: 80px;
-  }
-  
-  .testimonial p {
-    font-size: 30px;
-    padding-left: 140px;
-  }
-  
-  .testimonial p i {
-    color: #0fba5f;
-  }
-  
-  .testimonials {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20px;
-  }
-  
-  .testimonial-box {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    width: 250px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .testimonial-box:hover {
-    box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .testimonial-box blockquote {
-    font-style: italic;
-    font-size: 18px;
-  }
-  
-  .author {
-    margin-top: 10px;
-  }
-  
-  .author img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-  
-  .author p {
-    font-size: 14px;
-    color: #666;
-  }
-
-  .video-button {
-    display: inline-block;
-    margin-top: 10px; /* Reduced margin */
-    padding: 8px 16px; /* Reduced padding */
-    background-color: #ff0000; /* YouTube red */
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 14px; /* Adjusted font size */
-    transition: background-color 0.3s;
-}
-
-.video-button:hover {
-    background-color: #cc0000; /* Darker red on hover */
-}
-
-  
-  /* Footer Styles */
-  .footer-container {
+  /*products details end */
+.footer-container {
     display: flex;
     justify-content: space-around;
     padding: 20px 0;
@@ -487,21 +449,35 @@
     text-align: center;
     color: black;
   }
-  
-  /* Media Queries */
-  
-  /* Max width 1150px */
-  @media (max-width: 1150px) {
-    .products h2 {
-      margin-left: 40px; /* Adjust margin for smaller screens */
-    }
-  }
-  
- 
-  
-  /* Max width 600px */
   @media (max-width: 600px) {
-   
+    .product-details {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column layout */
+        justify-items: center; /* Align content to the center */
+        max-width: 100%; /* Make sure it takes the full width */
+        padding: 10px;
+    }
+
+    .product-image {
+        width: 100%; /* Full width for image section */
+    }
+
+    .product-info {
+        width: 100%; 
+        margin-top: 20px; 
+        text-align: left; 
+    }
+    
+    .product-info input {
+        margin:  0; 
+        
+    }
+
+    .product-info button {
+        margin: 0 ;
+    }
+
+
   
     nav ul li {
       margin-left: 0;
@@ -535,7 +511,16 @@
       width: 100%; /* Full width on smaller screens */
       margin-bottom: 20px; /* Spacing between items */
     }
-  
+  .container{
+    width: 100%;
+    justify-content: center;
+
+  }
+  .card{
+    width: 100%;
+  }
+
+
     .testimonial h2 {
       font-size: 24px;
       margin-left: 20px;
@@ -559,7 +544,9 @@
         font-size: 12px;
     }
     
+    
   }
+
   @media(max-width: 800px) {
     .hideOnMobile {
         display: none;
@@ -611,5 +598,3 @@
   }
   
 }
-
-  
