@@ -185,10 +185,10 @@
 
 .container .card .imgBx img {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 390px; /* Reduced size */
+  width: 190px; /* Reduced size */
 }
 
 .container .card .contentBx {
@@ -210,6 +210,7 @@
   font-weight: 600;
   font-size: 16px; /* Reduced font size */
   letter-spacing: 1px;
+  margin-top: 15px;
   color: #000000;
 }
 
@@ -378,6 +379,24 @@
     font-size: 14px;
     color: #666;
   }
+
+  .video-button {
+    display: inline-block;
+    margin-top: 10px; /* Reduced margin */
+    padding: 8px 16px; /* Reduced padding */
+    background-color: #ff0000; /* YouTube red */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px; /* Adjusted font size */
+    transition: background-color 0.3s;
+}
+
+.video-button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
   
   /* Footer Styles */
   .footer-container {
@@ -546,15 +565,16 @@
     }
     .showside {
         display: block;
+        
     }
     
     .sidebar {
       position: fixed;
       top: 0;
       right: 0;
-      height: 100vh;
+      
       width: 300px;
-      z-index: 999;
+      z-index: 199;
       background-color: rgba(129, 129, 129, 0.316);
       backdrop-filter: blur(10px);
       box-shadow: -10px 0 10px rgb(56, 56, 56);
@@ -566,6 +586,10 @@
   
   .sidebar li {
       width: 100%;
+      font-size: large;
+      line-height: 40px;
+      padding-left: 20PX;
+      
   }
   
   .sidebar a {
@@ -576,9 +600,13 @@
 @media(max-width: 400px) {
     .sidebar {
         width: 100%;
+        padding-left: 20px;
+
     }
+    
     .showside {
       display: block;
+
   }
   
 }
