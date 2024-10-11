@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="buy-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+        <nav>
+          <div class="logo">
+            <img src="Images/logo.png.png" alt="Appu Farm Fresh Logo" />
+          </div>
+          <ul class="sidebar" style="display: none;">
+            <li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About us</a></li>
+            <li><a href="Productpage.html">Products</a></li>
+            <li><a href="Buy-page.html">Buy</a></li>
+            <li><a href="Contact-page.html">Contact</a></li>
+            
+          </ul>
+  
+          <ul>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="About.html">About us</a></li>
+            <li class="hideOnMobile"><a href="Productpage.html">Products</a></li>
+            <li class="hideOnMobile"><a href="Buy-page.html">Buy</a></li>
+            <li class="hideOnMobile"><a href="Contact-page.html">Contact</a></li>
+            <li class="showside" onclick="showSidebar()"><a href="#"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+  
+          </ul>
+        </nav>
+      </header>
+
+      
+    <section class="buy-page-heading">
+      <h2>Buy Products</h2>
+      <p>APPU FARM FRESH</p>
+    </section>
+
+    <section class="">
+      <h3 class="product-head">Get Product in 3 Steps</h3>
+      <div class="container">
+        <div class="step">
+            <p class="step-number">Step 1</p>
+          <img src="Images/whatsapp.png" alt="WhatsApp" class="step-image" />
+          <h4>What's App <br> <a href="">click & Join</a></h4>
+          
+        </div>
+        <div class="step">
+            <p class="step-number">Step 2</p>
+          <img
+            src="Images/sent address.png"
+            alt="Address Details"
+            class="step-image"/>
+          <h4>Sent Address Details</h4>
+          
+        </div>
+        <div class="step">
+            <p class="step-number">Step 3</p>
+          <img src="Images/upi-gpay.png" alt="Google Pay" class="step-image" />
+          <h4>Payment Through Google Pay</h4>
+          
+        </div>
+      </div>
+      <p class="note">* Delivery will be within 3 days after payment is completed.</p>
+    </section>
+ <!-- Footer Section -->
+ <section>
+    <div class="footer-container">
+      <div class="address">
+        <h3><i class="fa fa-map-marker" aria-hidden="true"></i> Address</h3>
+        <p>
+          APPU FARM FRESH<br />
+          Padinharethil House,<br />
+          Pathirikode P.O, Edappatta,<br />
+          Malappuram, Kerala - 679 326
+        </p>
+      </div>
+
+      <div class="contact">
+        <h3><i class="fa fa-address-book" aria-hidden="true"></i> Contact</h3>
+        <p>+91 0000000000<br />+91 0000000000</p>
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><img src="Images/facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="Images/instagram.png" alt="Instagram" /></a>
+          <a href="#"><img src="Images/whatsapp.png" alt="WhatsApp" /></a>
+        </div>
+      </div>
+
+      <div class="links">
+        <h3>Links</h3>
+        <ul>
+          <li>
+            <a href="index.html">
+              <i class="fa fa-home" aria-hidden="true"></i> Home</a
+            >
+          </li>
+          <li>
+            <a href="About.html">
+              <i class="fa fa-id-card" aria-hidden="true"></i> About Us</a
+            >
+          </li>
+          <li>
+            <a href="Productpage.html">
+              <i class="fa fa-product-hunt" aria-hidden="true"></i>
+              Products</a
+            >
+          </li>
+          <li>
+            <a href="Buy-page.html">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i> Buy</a
+            >
+          </li>
+          <li>
+            <a href="Contact-page.html">
+              <i class="fa fa-address-book" aria-hidden="true"></i> Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      © 2024 Copyright | Appu Farm Fresh | All Rights Reserved | Powered
+      by:Rio Skill Hub
+    </p>
+  </footer>
+  <script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'flex';
+    }
+
+    function hidesidebar(){
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'none';
+    }
+</script>
+    
+      
+    
+  </body>
+</html>

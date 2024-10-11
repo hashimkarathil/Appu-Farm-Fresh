@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="about.css">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="contact-page.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -16,6 +16,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
+
     <header>
         <nav>
           <div class="logo">
@@ -45,40 +46,58 @@
 
 
 
-    <section class="about-heading">
-        <h1>About Us</h1>
-        <h2>Appu Farm Fresh</h2>
-    </section>
-    <section class="about-section">
-        <div class="about-container">
-            <div class="profile">
-                <img src="Images/user-icon.jpg" alt="Client Image">
-                <p class="client-name">Client Name</p>
-                <p class="client-title">Founder</p>
-                <p class="client-company">Appu Farm Fresh</p>
-            </div>
-            <div class="history">
-                <h3>History</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            </div>
-        </div>
-
-        <div class="vision-mission">
-            <div class="vision">
-                <h3>Vision</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            </div>
-            <div class="mission">
-                <h3>Mission</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            </div>
+    <div class="container">
+        <div class="contact-header">
+            <h1>Contact</h1>
+            <p>APPU FARM FRESH</p>
         </div>
         
-    </section>
+        <div class="form-container">
+            <h2>Enquiry Form</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="product">Choose Product:</label>
+                    <input type="text" id="product" name="product" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="3"></textarea>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+        
+        
+        <div class="contact-footer">
+            <p>Email: appufarmfresh@gmail.com</p>
+            <p>Phone Number: +91 0000000000</p>
+            <div class="social-icons">
+                <a href="#"><img src="Images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="Images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="Images/whatsapp.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+    </div>
+    </div>
+    &nbsp; &nbsp;  &nbsp; &nbsp; 
+    &nbsp; &nbsp;  &nbsp; &nbsp; 
+
 
      <!-- Footer Section -->
      <section>
@@ -113,7 +132,7 @@
                 >
               </li>
               <li>
-                <a href="#">
+                <a href="About.html">
                   <i class="fa fa-id-card" aria-hidden="true"></i> About Us</a
                 >
               </li>
@@ -137,6 +156,7 @@
           </div>
         </div>
       </section>
+     
   
       <footer>
         <p>
