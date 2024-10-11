@@ -102,6 +102,11 @@
     color: #e5e5e5;
     font-size: 24px;
   }
+.second-container{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
 
   .products {
     background-color: #1f592a;
@@ -116,6 +121,22 @@
     letter-spacing: 1px;
     text-align: left;
     margin-left: 80px;
+  }
+  .category-item{
+    text-align: center;
+  }
+  .category-item img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid lightblue;
+    border-radius: 50%;
+  }
+  .category{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid lightblue;
+    border-radius: 50%;
   }
 /*......................start..........*/
 

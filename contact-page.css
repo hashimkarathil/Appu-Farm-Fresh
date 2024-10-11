@@ -234,6 +234,7 @@ button:hover {
   .social-icons img {
     width: 15px;
     margin-right: 5px;
+    text-align: left;
   }
   
   .links h3 {
@@ -279,3 +280,86 @@ button:hover {
     text-align: center;
     color: black;
   }
+  
+  /* Max width 600px */
+  @media (max-width: 600px) {
+   
+  
+    nav ul li {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+    nav img {
+      width: 100px;
+      height: 70px;
+      margin-left: 20px;
+    }
+    
+    
+    .footer-container {
+      flex-direction: column;
+      align-items: left;
+      padding-left: 50px;
+    }
+  
+    .footer-container div {
+      margin-bottom: 20px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    
+  }
+  @media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .showside {
+        display: block;
+        
+    }
+    
+    .sidebar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      
+      width: 300px;
+      z-index: 199;
+      background-color: rgba(129, 129, 129, 0.316);
+      backdrop-filter: blur(10px);
+      box-shadow: -10px 0 10px rgb(56, 56, 56);
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+  }
+  
+  .sidebar li {
+      width: 100%;
+      font-size: large;
+      line-height: 40px;
+      padding-left: 20PX;
+      
+  }
+  
+  .sidebar a {
+      width: 100%;
+  }
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+        padding-left: 20px;
+
+    }
+    
+    .showside {
+      display: block;
+
+  }
+  
+}
+
+  
