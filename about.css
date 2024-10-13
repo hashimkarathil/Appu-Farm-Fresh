@@ -1,9 +1,14 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
+
+/* General Styling */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f3f3f3;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Header */
@@ -35,9 +40,50 @@ nav ul li a {
   font-weight: bold;
 }
 
-nav a:hover {
-  background-color: beige;
+/* Existing Nav Styling */
+nav ul li {
+margin-left: 20px;
+font-size: 20px;
+position: relative; /* To make the hover effect work properly */
 }
+
+nav ul li a {
+color: #004d00;
+text-decoration: none;
+font-weight: bold;
+padding: 5px 10px; /* Add padding for better click area */
+transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect for nav ul li */
+nav ul li a:hover {
+background-color: #004d00; /* Change background color on hover */
+color: #ffffff; /* Change text color on hover */
+border-radius: 5px; /* Optional: Rounded corners */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+}
+
+/* Existing Logo Styling */
+nav img {
+background-color: transparent; /* Ensures the background is transparent */
+width: 180px;
+height: 80px;
+margin-left: 20px;
+transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and shadow transition */
+}
+
+/* Hover Effect for Logo */
+nav img:hover {
+transform: scale(1.1); /* Slightly enlarge the logo */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+.up-details-nav{
+  color: #004d00;
+  padding-left: 205px;
+  padding-bottom: 10px;
+}
+
 
 nav img {
   width: 180px;
@@ -284,7 +330,7 @@ footer p {
 }
 
 /* Media Queries */
-@media (max-width: 800px) {
+@media (max-width: 816px) {
   .hideOnMobile {
     display: none;
   }
@@ -317,6 +363,12 @@ footer p {
   
   .sidebar a {
       width: 100%;
+  }
+  .up-details-nav{
+    color: #004d00;
+    padding-left: 115px;
+    padding-bottom: 10px;
+    display: none;
   }
 }
 @media (max-width: 600px) {

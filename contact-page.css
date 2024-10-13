@@ -36,12 +36,49 @@ header {
     text-decoration: none;
     font-weight: bold;
   }
-  
-  nav a:hover {
-    background-color: beige;
+ /* Existing Nav Styling */
+ nav ul li {
+  margin-left: 20px;
+  font-size: 20px;
+  position: relative; /* To make the hover effect work properly */
+}
 
+nav ul li a {
+  color: #004d00;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px; /* Add padding for better click area */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect for nav ul li */
+nav ul li a:hover {
+  background-color: #004d00; /* Change background color on hover */
+  color: #ffffff; /* Change text color on hover */
+  border-radius: 5px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+}
+
+/* Existing Logo Styling */
+nav img {
+  background-color: transparent; /* Ensures the background is transparent */
+  width: 180px;
+  height: 80px;
+  margin-left: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and shadow transition */
+}
+
+/* Hover Effect for Logo */
+nav img:hover {
+  transform: scale(1.1); /* Slightly enlarge the logo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+.up-details-nav{
+    color: #004d00;
+    padding-left: 205px;
+    padding-bottom: 10px;
   }
-  
   nav img {
     width: 180px;
     height: 80px;
@@ -138,7 +175,30 @@ header {
     font-weight: bold;
     margin-right: 10px;
 }
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: auto; /* Adjusts height for multiple selections */
+    min-height: 40px; /* Minimum height */
+    background-color: #fff; /* Background color */
+}
 
+/* Style for selected options */
+.form-group select option:checked {
+    background-color: #007bff; /* Change to your desired color */
+    color: #fff; /* Text color for selected options */
+}
+
+/* Style for the dropdown when it is open */
+.form-group select:hover,
+.form-group select:focus {
+    border-color: #007bff; /* Highlight border on hover/focus */
+    outline: none; /* Remove default outline */
+}
 .form-group input,
 .form-group textarea {
     width: 60%;
@@ -345,7 +405,7 @@ button:hover {
     }
     
   }
-  @media(max-width: 800px) {
+  @media(max-width: 816px) {
     .hideOnMobile {
         display: none;
     }
@@ -381,6 +441,13 @@ button:hover {
   .sidebar a {
       width: 100%;
   }
+  .up-details-nav{
+    color: #004d00;
+    padding-left: 115px;
+    padding-bottom: 10px;
+    display: none;
+  }
+  
 }
 
 @media(max-width: 400px) {
