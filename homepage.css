@@ -410,124 +410,84 @@ nav img:hover {
 
 /*......................end..........*/
   /* Testimonial Section */
-  .testimonial {
-    padding: 20px;
-    background-color: #f7f7f7;
-  }
-  
-  .testimonial h2 {
-    font-size: 30px;
-    letter-spacing: 1px;
-    text-align: left;
-    margin-left: 80px;
-  }
-  
-  .testimonial p {
-    font-size: 30px;
-    padding-left: 140px;
-  }
-  
-  .testimonial p i {
-    color: #0fba5f;
-  }
-  
-  .testimonials {
+  .testimonial-heading {
+    text-align: center; /* Center the heading */
+    margin: 20px 0; /* Spacing for the section */
+}
+
+.testi-head {
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.testi-head h3 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Increase font size for better visibility */
+    color: #333; /* Dark color for the heading */
+}
+
+.testimonial {
+    display: grid; /* Use grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+    justify-items: center; /* Center cards in grid */
+    align-items: start; /* Align cards to the start */
+    padding: 20px; /* Padding for the section */
+    margin: 0; /* Reset margin */
+}
+
+.testimonial-card {
+    height: 300px; /* Fixed height for cards */
+    width: 280px; /* Fixed width for cards */
+    background-color: #ffffff; /* White background for the card */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px; /* Increased padding for a spacious feel */
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20px;
-  }
-  .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    justify-items: center;
-  }
-  .card{
-    justify-items: center;
-    position: relative;
-    width: 416px;
-    height: 420px;
-    background: #fff;
-    padding: 8px;
-    border-top-left-radius: 70px;
-    border-top-right-radius: 70px;
-    border-bottom-right-radius: 40px;
-    border-bottom-left-radius: 5px;
-    box-shadow: 0 0 4px #ddd;
-    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+    position: relative; /* For inner design */
+    overflow: hidden; /* Hide overflow */
 }
-.card .card-inside{
-    width: 400px;
-    height: 370px;
-    position: relative;
-    background: linear-gradient(180deg, #eaeaea 0%, #f3f3f3 100%);
-    border-radius: 65px;
-    overflow: hidden;
-    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.375);
-}
-.card-inside img{
+
+.testimonial-card::before {
+    content: '';
     position: absolute;
-    height: 380px;
-    width: 280px;
+    top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
-    top: -10px;
-    right: -20px;
-
-}
-.text-box{
-    margin: 40px;
-}
-.text-box h2{
-    color: #303239;
-}
-.text-box h6{
-    font-size: 1rem;
-    font-weight: 500;
-    color: #555555;
-}
-.control-btn{
-    transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 2.975);
-    cursor: pointer;
-    color: #fff;
-    background-color: #4664ff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    font-size: 2.5rem;
-    position: absolute;
-    display: grid;
-    place-items: center;
-    bottom: 20px;
-    left: 20px;
-    box-shadow: 0 6px 12px #a0afff;
-}
-.card #check{
-    appearance: none;
-    position: absolute;
-}
-.card #check:checked ~ .card-inside{
-    height: 240px;
-}
-.card #check:checked ~ .control-btn{
-    bottom: 38%;
-    transform: rotate(45deg);
-}
-.card .content{
-    width: 400px;
-    color: #303239;
-    padding: 10px;
-    text-align: right;
-    margin-top: 30px;
-}
-.rating{
-    color: #ffa903;
-}
-.content p{
-    font-size: 0.9rem;
-    line-height: 1.5rem;
+    background-color: rgba(244, 244, 244, 0.8); /* Light background overlay */
+    z-index: 0; /* Send the overlay behind content */
+    border-radius: 10px; /* Match border radius */
 }
 
+.testimonial-card p {
+    font-size: 14px; /* Consistent size */
+    color: #555; /* Gray text for testimonial */
+    margin: 0 0 10px; /* Spacing for paragraphs */
+    line-height: 1.5; /* Improved readability */
+    z-index: 1; /* Bring text above overlay */
+}
+
+.star-rating {
+    display: flex;
+    margin-bottom: 10px; /* Space below the star rating */
+    color: #ffcc00; /* Gold color for filled stars */
+}
+
+.customer-name {
+    font-weight: bold; /* Bold customer name */
+    color: #333; /* Dark text for name */
+    z-index: 1; /* Bring customer name above overlay */
+    text-align: right; /* Align the name to the right */
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
 
   /* Footer Styles */
   .footer-container {
@@ -688,7 +648,7 @@ nav img:hover {
       width: 100%; /* Full width on smaller screens */
       margin-bottom: 20px; /* Spacing between items */
     }
-  
+  /*
     .testimonial h2 {
       font-size: 24px;
       margin-left: 20px;
@@ -697,8 +657,9 @@ nav img:hover {
     .testimonial p {
       font-size: 20px;
       padding-left: 20px;
-    }
+    } */
   
+    
     .footer-container {
       flex-direction: column;
       align-items: left;
@@ -769,4 +730,26 @@ nav img:hover {
 
   }
   
+}
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px; /* Position it 20px from the bottom */
+  right: 20px; /* Position it 20px from the right */
+  display: none; /* Hide initially */
+  background-color: rgba(0, 77, 0, 0.8); /* Semi-transparent background */
+  border-radius: 50%; /* Circular shape */
+  padding: 10px; /* Padding for clickable area */
+  z-index: 1000; /* Ensure it stays above other elements */
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.back-to-top img {
+  width: 30px; /* Icon size */
+  height: 30px; /* Icon size */
+}
+
+.back-to-top:hover {
+  background-color: rgba(0, 77, 0, 1); /* Darken background on hover */
 }

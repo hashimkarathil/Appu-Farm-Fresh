@@ -62,7 +62,7 @@
             <p>₹200</p>
             <label for="quantity">Quantity</label>
             <input type="number" id="quantity" name="quantity" value="1" min="1">
-            <a href="https://wa.me/+919744865913"><button type="button">Buy Now </button> </a>
+            <button type="button"><a href="#" class="buy-now" onclick="sendToWhatsApp('വാട്ടുകപ്പ', '400gm,₹200', document.getElementById('quantity').value)">Buy Now</a></button>
         </div>
     </section>
 
@@ -235,6 +235,15 @@
             const sidebar = document.querySelector('.sidebar');
             sidebar.style.display = 'none';
         }
+        function sendToWhatsApp(productName, productDescription, quantity) {
+    const phoneNumber = '+917994283968'; // Replace with your WhatsApp number
+    const message = `*Product:* ${productName}\n*Description:* ${productDescription}\n*Quantity:* ${quantity}`;
+    const url = `https://wa.me/${+917994283968}?text=${encodeURIComponent(message)}`;
+    
+    // Open the URL in a new tab or window
+    window.open(url, '_blank');
+}
+
     </script>
 </body>
 </html>
