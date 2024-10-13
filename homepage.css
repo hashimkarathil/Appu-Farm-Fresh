@@ -123,6 +123,7 @@
     margin-left: 80px;
   }
   .category-item{
+    margin-left: 50px;
     text-align: center;
   }
   .category-item img{
@@ -678,4 +679,7 @@
   
 }
 
-  
+.demo{
+  padding-bottom: 10px;
+  background-color: #004d00;
+}

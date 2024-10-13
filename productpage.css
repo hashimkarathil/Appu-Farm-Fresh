@@ -7,7 +7,7 @@
   .product-container {
     width: 100%;
     height: 150px;
-    background-color: #1B4426;
+    background-color: #2b6239;
     display: flex;
     flex-direction: column; /* Arranges h2 and p vertically */
     align-items: center; /* Horizontally centers the h2 and p */
@@ -452,4 +452,17 @@ header {
   .sidebar a {
       width: 100%;
   }
+}
+@media(max-width: 400px) {
+  .sidebar {
+      width: 100%;
+      padding-left: 20px;
+
+  }
+  
+  .showside {
+    display: block;
+
+}
+
 }

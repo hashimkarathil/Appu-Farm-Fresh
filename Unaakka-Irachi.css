@@ -456,6 +456,7 @@ header {
         justify-items: center; /* Align content to the center */
         max-width: 100%; /* Make sure it takes the full width */
         padding: 10px;
+        margin: 25px;
     }
 
     .product-image {

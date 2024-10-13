@@ -170,16 +170,16 @@ button:hover {
     font-size: 14px;
 }
 
-.social-icons {
+.social-icons2 {
     display: flex;
     justify-content: center;
 }
 
-.social-icons a {
+.social-icons2 a {
     margin: 0 10px;
 }
 
-.social-icons img {
+.social-icons2 img {
     width: 20px;
     height: 20px;
 }
@@ -295,7 +295,42 @@ button:hover {
       margin-left: 20px;
     }
     
-    
+    .form-container {
+      max-width: 350PX;
+      padding: 15px;  /* Reduce padding */
+      margin-top: 30px;  /* Reduce top margin */
+  }
+
+  .form-container h2 {
+      font-size: 18px;  /* Reduce font size */
+      margin-bottom: 15px;
+  }
+
+  .form-group {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 10px;  /* Reduce spacing between fields */
+  }
+
+  .form-group label {
+      font-size: 14px;  /* Reduce label font size */
+      margin-bottom: 5px;  /* Add margin for vertical layout */
+      margin-right: 0;  /* Remove margin when stacked */
+  }
+
+  .form-group input,
+  .form-group textarea {
+      width: 100%;  /* Full width on smaller screens */
+      padding: 8px;  /* Reduce padding */
+      font-size: 14px;  /* Smaller font size */
+  }
+
+  button {
+      width: 100%;  /* Full-width button */
+      padding: 10px;  /* Reduce padding */
+      font-size: 16px;  /* Slightly smaller font */
+  }
+  
     .footer-container {
       flex-direction: column;
       align-items: left;
