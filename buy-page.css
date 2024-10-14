@@ -172,7 +172,12 @@ nav img {
   border-radius: 10px;
   text-align: center;
 }
-
+.step-number{
+  text-align: center;
+  justify-content: center;
+  
+  padding-top: 30px;
+}
 .step h4 {
   color: black;
 }
