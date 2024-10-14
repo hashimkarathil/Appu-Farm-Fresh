@@ -16,7 +16,9 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-
+  <a href="#" class="back-to-top" id="back-to-top">
+    <img src="Images/top-icon.png" alt="Back to Top" />
+</a>
     <header>
         <nav>
           <div class="logo">
@@ -391,6 +393,24 @@
             const sidebar = document.querySelector('.sidebar');
             sidebar.style.display = 'none';
         }
+         // Show or hide the "back to top" button based on scroll position
+    window.onscroll = function() {
+        const backToTopButton = document.getElementById('back-to-top');
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopButton.style.display = 'block'; // Show button
+        } else {
+            backToTopButton.style.display = 'none'; // Hide button
+        }
+    };
+
+    // Smooth scroll back to the top
+    document.getElementById('back-to-top').onclick = function(event) {
+        event.preventDefault(); // Prevent default anchor click behavior
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Smooth scroll
+        });
+    };
     </script>
 </body>
 </html>

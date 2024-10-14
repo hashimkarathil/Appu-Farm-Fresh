@@ -175,7 +175,19 @@ header {
     color: #333;
     margin: 10px 0;
 }
-
+.product-info a{
+  text-decoration: none;
+  color: inherit;
+}`
+.product-info button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
 .product-info label, .product-info input, .product-info button {
     display: block;
     margin: 10px 0;
@@ -652,5 +664,7 @@ header {
       display: block;
 
   }
-  
+  .products{
+    justify-content: center;
+}
 }

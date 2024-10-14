@@ -510,3 +510,24 @@ nav img:hover {
 }
 
 }
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px; /* Position it 20px from the bottom */
+  right: 20px; /* Position it 20px from the right */
+  display: none; /* Hide initially */
+  background-color: rgba(0, 77, 0, 0.8); /* Semi-transparent background */
+  border-radius: 50%; /* Circular shape */
+  padding: 10px; /* Padding for clickable area */
+  z-index: 1000; /* Ensure it stays above other elements */
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.back-to-top img {
+  width: 30px; /* Icon size */
+  height: 30px; /* Icon size */
+}
+
+.back-to-top:hover {
+  background-color: rgba(0, 77, 0, 1); /* Darken background on hover */
+}

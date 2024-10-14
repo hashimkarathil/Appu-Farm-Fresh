@@ -187,7 +187,10 @@ nav img:hover {
     padding: 5px;
     width: 100px;
 }
-
+.product-info a{
+  text-decoration: none;
+  color: inherit;
+}
 .product-info button {
     background-color: #28a745;
     color: white;

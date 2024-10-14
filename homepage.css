@@ -729,7 +729,52 @@ nav img:hover {
       display: block;
 
   }
+
   
+}
+
+@media screen and (max-width: 400px) {
+  .container .card {
+      width: 250px; /* Further reduce width */
+      height: 320px; /* Further reduce height */
+  }
+
+  .container .card .imgBx img {
+      width: 160px; /* Reduced image size */
+  }
+
+  .container .card .contentBx {
+      height: 90px; /* Reduced content box height */
+  }
+
+  .container .card:hover .contentBx {
+      height: 180px; /* Adjust height on hover */
+  }
+
+  .container .card .contentBx h2 {
+      font-size: 14px; /* Further reduce font size */
+  }
+
+  .container .card .contentBx p {
+      font-size: 10px; /* Reduce paragraph font size */
+  }
+
+  .container .card .contentBx .size span {
+      width: 20px; /* Reduced size */
+      height: 20px;
+      line-height: 20px;
+      font-size: 10px;
+  }
+
+  .container .card .contentBx .color span {
+      width: 14px; /* Further reduced size */
+      height: 14px;
+  }
+
+  .container .card .contentBx a {
+      padding: 6px 12px; /* Reduced padding for button */
+      font-size: 12px; /* Further reduced font size */
+  }
 }
 
 
@@ -753,3 +798,4 @@ nav img:hover {
 .back-to-top:hover {
   background-color: rgba(0, 77, 0, 1); /* Darken background on hover */
 }
+
