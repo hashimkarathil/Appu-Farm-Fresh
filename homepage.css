@@ -385,13 +385,13 @@ nav img:hover {
 .container .card .contentBx a {
     display: inline-block;
     padding: 8px 16px; /* Reduced padding */
-    background: #000000;
+    background: #0a751ce7;
     border-radius: 4px;
     margin-top: 8px; /* Reduced margin */
     text-decoration: none;
     font-size: 14px; /* Reduced font size */
     font-weight: 500;
-    color: #46ee04;
+    color: #ffffff;
     opacity: 0;
     transform: translateY(50px);
     transition: 0.4s; /* Reduced from 0.5s */
